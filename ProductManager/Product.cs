@@ -21,4 +21,4 @@ namespace ProductManager
             return Quantity > 0;
         }
     }
-}
+} 
