@@ -10,4 +10,4 @@ All notable changes to this project will be documented in this file.
 •   Проверил граничные значения, добавил функционал в кнопки
 ### Added
 
-•   Добавление файла Product.cs и нового класса Product
+•   Добавление файла Product.cs и нового класса Product.
