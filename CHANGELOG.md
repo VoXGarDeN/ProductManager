@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+Все заметные изменения в этом проекте будут задокументированны в этом файле.
 
 ## [Unreleased] - 2025-08-10
 
