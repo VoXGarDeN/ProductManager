@@ -112,7 +112,5 @@ namespace ProductManager
                 productsList.Items.Add(product.ToString());
             }
         }
-
-
     }
 }

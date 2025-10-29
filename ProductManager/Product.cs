@@ -1,5 +1,4 @@
-﻿using System;
-namespace ProductManager
+﻿namespace ProductManager
 {
     public class Product
     {
@@ -21,4 +20,4 @@ namespace ProductManager
             return Quantity > 0;
         }
     }
-} 
+}
