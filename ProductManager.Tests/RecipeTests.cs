@@ -17,15 +17,15 @@ namespace MealPlanner.Tests
             List<string> instructions = new List<string> { "Step 1", "Step 2" };
             int calories = 500;
 
-            // Act
+            // Act выполнение тестируемого действия (создание объекта Recipe)
             Recipe recipe = new Recipe(name, description, ingredients, instructions, calories);
 
-            // Assert
-            Assert.AreEqual(name, recipe.Name);
-            Assert.AreEqual(description, recipe.Description);
-            CollectionAssert.AreEqual(ingredients, recipe.Ingredients);
-            CollectionAssert.AreEqual(instructions, recipe.Instructions);
-            Assert.AreEqual(calories, recipe.Calories);
+            // проверка, что все свойства рецепта установлены корректно
+            Assert.AreEqual(name, recipe.Name);                    // Проверка названия рецепта
+            Assert.AreEqual(description, recipe.Description);      // Проверка описания рецепта
+            CollectionAssert.AreEqual(ingredients, recipe.Ingredients);  // Проверка списка ингредиентов
+            CollectionAssert.AreEqual(instructions, recipe.Instructions); // Проверка списка инструкций
+            Assert.AreEqual(calories, recipe.Calories);            // Проверка калорийности
         }
 
         [TestMethod]
@@ -34,10 +34,10 @@ namespace MealPlanner.Tests
             // Arrange
             Recipe recipe = new Recipe("Test Recipe", "Test Description", new List<string>(), new List<string>(), 500);
 
-            // Act
+            // вызов метода ToString()
             string result = recipe.ToString();
 
-            // Assert
+            // проверка, что метод возвращает только название рецепта
             Assert.AreEqual("Test Recipe", result);
         }
     }

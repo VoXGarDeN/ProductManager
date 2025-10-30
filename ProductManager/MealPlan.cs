@@ -125,7 +125,7 @@ namespace MealPlanner
             shoppingListForm.ShowDialog(parentForm);
 
             // 5. Получение отредактированного списка (если нужно)
-            // shoppingList = shoppingListForm.GetShoppingList();
+            shoppingList = shoppingListForm.GetShoppingList();
         }
     }
 }
